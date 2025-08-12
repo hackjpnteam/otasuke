@@ -328,12 +328,6 @@ function App() {
                   src="/buying-event.png" 
                   alt="買取催事 - ジュエリーバイバック" 
                   className="w-full h-full object-cover rounded-2xl"
-                  onError={(e) => {
-                    // 画像が読み込めない場合のフォールバック
-                    e.currentTarget.style.display = 'none';
-                    const nextSibling = e.currentTarget.nextElementSibling as HTMLElement;
-                    if (nextSibling) nextSibling.style.display = 'block';
-                  }}
                 />
               </div>
               <h4 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
@@ -356,12 +350,6 @@ function App() {
                   src="/buying-event2.png" 
                   alt="磁気治療器催事 - オンラインショッピング" 
                   className="w-full h-full object-cover rounded-2xl"
-                  onError={(e) => {
-                    // 画像が読み込めない場合のフォールバック
-                    e.currentTarget.style.display = 'none';
-                    const nextSibling = e.currentTarget.nextElementSibling as HTMLElement;
-                    if (nextSibling) nextSibling.style.display = 'block';
-                  }}
                 />
               </div>
               <h4 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
