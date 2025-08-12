@@ -332,7 +332,7 @@ function App() {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-xl sm:rounded-2xl mb-6 sm:mb-8 overflow-hidden relative border border-orange-100 shadow-sm">
                 <img 
-                  src="/buying-event.png" 
+                  src="public/buying-event.png" 
                   alt="買取催事 - ジュエリーバイバック" 
                   className="w-full h-full object-cover rounded-xl sm:rounded-2xl"
                 />
@@ -354,7 +354,7 @@ function App() {
             >
               <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl sm:rounded-2xl mb-6 sm:mb-8 overflow-hidden relative border border-blue-100 shadow-sm">
                 <img 
-                  src="/buying-event2.png" 
+                  src="public/buying-event2.png" 
                   alt="磁気治療器催事 - オンラインショッピング" 
                   className="w-full h-full object-cover rounded-xl sm:rounded-2xl"
                 />
