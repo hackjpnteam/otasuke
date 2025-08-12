@@ -335,48 +335,6 @@ function App() {
                     if (nextSibling) nextSibling.style.display = 'block';
                   }}
                 />
-                {/* フォールバック用のCSS描画（画像が読み込めない場合） */}
-                <div className="absolute inset-0 flex items-center justify-center p-8 hidden">
-                  <div className="w-full h-full relative">
-                    {/* Background pattern */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-orange-100 to-yellow-100"></div>
-                    
-                    {/* Sign board */}
-                    <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-gray-800 rounded-lg p-4 min-w-[200px]">
-                      <div className="bg-white rounded p-3 text-center">
-                        <div className="text-indigo-600 font-bold text-lg">BUYING</div>
-                        <div className="text-indigo-600 font-bold text-lg">EVENT</div>
-                        <div className="text-purple-600 text-sm mt-2">🛍️</div>
-                        <div className="text-indigo-600 font-semibold text-sm mt-2">JEWELRY</div>
-                        <div className="text-indigo-600 font-semibold text-sm">BUYBACK</div>
-                      </div>
-                    </div>
-
-                    {/* People */}
-                    <div className="absolute bottom-8 left-8">
-                      <div className="flex items-center space-x-2">
-                        <div className="w-8 h-8 bg-orange-300 rounded-full"></div>
-                        <div className="w-6 h-12 bg-orange-400 rounded-sm"></div>
-                      </div>
-                    </div>
-                    
-                    <div className="absolute bottom-8 right-8">
-                      <div className="flex items-center space-x-2">
-                        <div className="w-8 h-8 bg-blue-300 rounded-full"></div>
-                        <div className="w-6 h-12 bg-blue-400 rounded-sm"></div>
-                      </div>
-                    </div>
-
-                    {/* Table with jewelry */}
-                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-4 bg-white rounded shadow-md">
-                      <div className="flex justify-center space-x-2 -mt-2">
-                        <div className="w-3 h-3 border-2 border-yellow-500 rounded-full"></div>
-                        <div className="w-2 h-2 border-2 border-yellow-500 rounded-full"></div>
-                        <div className="w-3 h-3 bg-brown-600 rounded"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <h4 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
                 買取催事
@@ -405,84 +363,6 @@ function App() {
                     if (nextSibling) nextSibling.style.display = 'block';
                   }}
                 />
-                {/* フォールバック用のCSS描画（画像が読み込めない場合） */}
-                <div className="absolute inset-0 flex items-center justify-center p-6 hidden">
-                  <div className="w-full h-full relative">
-                    {/* Background */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-100"></div>
-                    
-                    {/* Laptop */}
-                    <div className="absolute top-4 left-8 w-20 h-14">
-                      <div className="w-full h-10 bg-gray-700 rounded-t-lg border-2 border-gray-800"></div>
-                      <div className="w-full h-8 bg-white rounded border-2 border-gray-600 flex items-center justify-center">
-                        <div className="w-6 h-6 border-2 border-gray-800 rounded-sm flex items-center justify-center">
-                          <div className="w-3 h-2 bg-gray-800 rounded-sm"></div>
-                        </div>
-                      </div>
-                      <div className="w-6 h-1 bg-gray-600 mx-auto rounded"></div>
-                    </div>
-
-                    {/* Blue rabbit character */}
-                    <div className="absolute top-8 right-8 w-16 h-20">
-                      {/* Body */}
-                      <div className="absolute bottom-0 w-12 h-12 bg-blue-400 rounded-full border-2 border-gray-800"></div>
-                      {/* Head */}
-                      <div className="absolute top-2 left-1 w-10 h-10 bg-blue-400 rounded-full border-2 border-gray-800"></div>
-                      {/* Ears */}
-                      <div className="absolute top-0 left-2 w-3 h-6 bg-blue-400 rounded-full border-2 border-gray-800 transform -rotate-12"></div>
-                      <div className="absolute top-0 right-2 w-3 h-6 bg-blue-400 rounded-full border-2 border-gray-800 transform rotate-12"></div>
-                      {/* Eyes */}
-                      <div className="absolute top-4 left-3 w-1 h-1 bg-gray-800 rounded-full"></div>
-                      <div className="absolute top-4 right-3 w-1 h-1 bg-gray-800 rounded-full"></div>
-                      {/* Nose */}
-                      <div className="absolute top-5 left-1/2 transform -translate-x-1/2 w-1 h-0.5 bg-gray-800 rounded"></div>
-                      {/* Arm pointing */}
-                      <div className="absolute top-8 left-0 w-6 h-2 bg-blue-400 rounded-full border border-gray-800 transform -rotate-45"></div>
-                    </div>
-
-                    {/* Chair */}
-                    <div className="absolute bottom-6 right-6 w-12 h-16">
-                      <div className="w-full h-10 bg-orange-400 rounded border-2 border-gray-800"></div>
-                      <div className="absolute bottom-0 left-1 w-2 h-6 bg-orange-400 border-2 border-gray-800"></div>
-                      <div className="absolute bottom-0 right-1 w-2 h-6 bg-orange-400 border-2 border-gray-800"></div>
-                    </div>
-
-                    {/* Magnetic therapy device */}
-                    <div className="absolute bottom-4 left-8 w-16 h-8">
-                      <div className="w-full h-6 bg-white rounded border-2 border-gray-800 flex items-center justify-center">
-                        <div className="w-8 h-3 bg-gray-700 rounded"></div>
-                      </div>
-                      {/* Buttons */}
-                      <div className="flex justify-center space-x-1 mt-1">
-                        <div className="w-2 h-1 bg-gray-600 rounded-full"></div>
-                        <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-                        <div className="w-2 h-1 bg-gray-600 rounded-full"></div>
-                      </div>
-                    </div>
-
-                    {/* Magnetic pads with cables */}
-                    <div className="absolute bottom-2 left-4">
-                      <div className="w-6 h-6 bg-gray-300 rounded-full border-2 border-gray-600 flex items-center justify-center">
-                        <div className="w-3 h-0.5 bg-gray-600"></div>
-                        <div className="w-0.5 h-3 bg-gray-600 absolute"></div>
-                      </div>
-                      {/* Cable */}
-                      <div className="absolute top-3 left-3 w-0.5 h-6 bg-gray-800"></div>
-                    </div>
-                    
-                    <div className="absolute bottom-2 left-12">
-                      <div className="w-6 h-6 bg-gray-300 rounded-full border-2 border-gray-600 flex items-center justify-center">
-                        <div className="w-3 h-0.5 bg-gray-600"></div>
-                        <div className="w-0.5 h-3 bg-gray-600 absolute"></div>
-                      </div>
-                      {/* Cable */}
-                      <div className="absolute top-3 left-3 w-0.5 h-6 bg-gray-800"></div>
-                      {/* Wave lines */}
-                      <div className="absolute -top-2 left-1 text-xs">〜</div>
-                      <div className="absolute -top-1 left-2 text-xs">〜</div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <h4 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
                 磁気治療器催事
