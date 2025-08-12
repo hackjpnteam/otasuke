@@ -3,7 +3,7 @@ interface FooterProps {
   setCurrentPage: (page: string) => void
 }
 
-export default function Footer({ currentPage, setCurrentPage }: FooterProps) {
+export default function Footer({ setCurrentPage }: FooterProps) {
   return (
     <footer className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900">
       <div className="max-w-7xl mx-auto">

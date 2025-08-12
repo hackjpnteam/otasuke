@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { ShoppingBag, Activity, Menu, X, ArrowRight, Star, Users, Shield } from 'lucide-react'
+import { Menu, X, ArrowRight, Star, Users, Shield } from 'lucide-react'
 import About from './components/About'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import Contact from './components/Contact'
@@ -331,7 +331,8 @@ function App() {
                   onError={(e) => {
                     // 画像が読み込めない場合のフォールバック
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'block';
+                    const nextSibling = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextSibling) nextSibling.style.display = 'block';
                   }}
                 />
                 {/* フォールバック用のCSS描画（画像が読み込めない場合） */}
@@ -400,7 +401,8 @@ function App() {
                   onError={(e) => {
                     // 画像が読み込めない場合のフォールバック
                     e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'block';
+                    const nextSibling = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextSibling) nextSibling.style.display = 'block';
                   }}
                 />
                 {/* フォールバック用のCSS描画（画像が読み込めない場合） */}
