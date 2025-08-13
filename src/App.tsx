@@ -231,7 +231,7 @@ function App() {
               transition={{ duration: 0.8, delay: 0.1 }}
             >
               <span className="w-2 h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full animate-pulse" />
-              <span className="text-indigo-700 text-xs sm:text-sm font-medium">日本全国対応可能</span>
+              <span className="text-indigo-700 text-xs sm:text-sm font-medium">無理な売り込みはありませんのでご安心ください。</span>
             </motion.div>
             
             <motion.h1 
