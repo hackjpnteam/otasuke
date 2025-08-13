@@ -224,15 +224,6 @@ function App() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(99,102,241,0.1),transparent)]" />
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
-            <motion.div
-              className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 border border-indigo-200 mb-6 sm:mb-8"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-            >
-              <span className="w-2 h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full animate-pulse" />
-              <span className="text-indigo-700 text-xs sm:text-sm font-medium">無理な売り込みはありませんのでご安心ください。</span>
-            </motion.div>
             
             <motion.h1 
               className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-6 sm:mb-8 leading-[1.1] sm:leading-[0.9] tracking-tight px-2"
@@ -280,12 +271,22 @@ function App() {
                 サービスを見る
               </button>
             </motion.div>
+
+            <motion.div
+              className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 border border-indigo-200 mb-6 sm:mb-8"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.9 }}
+            >
+              <span className="w-2 h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full animate-pulse" />
+              <span className="text-indigo-700 text-xs sm:text-sm font-medium">無理な売り込みはありませんのでご安心ください。</span>
+            </motion.div>
             
             <motion.div
               className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8 opacity-60"
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.6 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
             >
               <div className="flex items-center gap-2 text-gray-500 text-xs sm:text-sm">
                 <Shield className="w-3 h-3 sm:w-4 sm:h-4" />
