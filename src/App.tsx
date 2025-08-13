@@ -467,16 +467,20 @@ function App() {
             <br className="hidden sm:block" />
             経験豊富なスタッフが最適なソリューションをご提案いたします。
           </motion.p>
-          <motion.button 
-            onClick={() => setCurrentPage('contact')}
-            className="group bg-white text-indigo-600 w-full sm:w-auto px-8 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-xl sm:rounded-2xl text-base sm:text-lg lg:text-xl font-bold hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-xl min-h-[48px] mx-4 sm:mx-0"
+          <motion.div
+            className="flex justify-center w-full px-4 sm:px-0"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            無料相談を申し込む
-          </motion.button>
+            <button 
+              onClick={() => setCurrentPage('contact')}
+              className="group bg-white text-indigo-600 w-full sm:w-auto px-8 sm:px-10 lg:px-12 py-4 sm:py-5 rounded-xl sm:rounded-2xl text-base sm:text-lg lg:text-xl font-bold hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 shadow-xl min-h-[48px] max-w-sm"
+            >
+              無料相談を申し込む
+            </button>
+          </motion.div>
         </div>
       </motion.section>
 
