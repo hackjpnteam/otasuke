@@ -454,7 +454,7 @@ function App() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            今すぐお困りごとを<span className="bg-gradient-to-r from-yellow-200 to-orange-200 bg-clip-text text-transparent">解決しませんか？</span>
+無理な売り込みはありませんので<span className="bg-gradient-to-r from-yellow-200 to-orange-200 bg-clip-text text-transparent">ご安心ください。</span>
           </motion.h3>
           <motion.p 
             className="text-base sm:text-lg md:text-xl text-indigo-100 mb-10 sm:mb-12 lg:mb-16 leading-relaxed font-light px-4"
