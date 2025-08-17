@@ -84,7 +84,7 @@ export default function About() {
                   <User className="w-5 h-5 text-indigo-600 mt-1 flex-shrink-0" />
                   <div>
                     <p className="text-sm text-gray-500 mb-1">代表者</p>
-                    <p className="text-lg font-semibold text-gray-900">鈴木 達也</p>
+                    <p className="text-lg font-semibold text-gray-900">河越廉</p>
                   </div>
                 </div>
               </div>
